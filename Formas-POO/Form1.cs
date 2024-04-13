@@ -6,5 +6,6 @@ namespace Formas_POO
         {
             InitializeComponent();
         }
+
     }
 }
