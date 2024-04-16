@@ -1,5 +1,6 @@
 using System.Configuration;
 using System.Reflection;
+using classes;
 
 namespace classes
 {
@@ -9,11 +10,10 @@ namespace classes
         public virtual void Mostrar(){
             
         }
-        public abstract double CalcularArea(double valor);
-        public abstract double CalcularPerimetro(double valor);
+        public abstract double CalcularArea();
+        public abstract double CalcularPerimetro();
 
-        public abstract double CalcularArea1(double valor, double valor1);
-        public abstract double CalcularPerimetro1(double valor, double valor1);
+        
     }
 
     public abstract class Quadrado : Forma{
@@ -29,32 +29,27 @@ namespace classes
 
             return this.val;
         }
-          public override double CalcularArea(double _val){
+          public override double CalcularArea(){
 
-            return 4*_val;
+            return Math.Pow(val, 2);
           }
 
-        public override double CalcularPerimetro(double _val){
-            return 4*_val;
+        public override double CalcularPerimetro(){
+            return 4 * val;
         }
+
+         public override void Mostrar(){
+        Console.WriteLine(val);
+        Console.WriteLine(CalcularArea());
+        Console.WriteLine(CalcularPerimetro());
+    }
+
     }
 
     public abstract class Octagono : Forma{
         
         public double lado {get;set;}
-        public double apotema {get;set;}
-         public double val {get;set;}
-
-        public double setValor(double _val){
-
-            return this.val = _val;
-        }
-
-        public double getValor(){
-
-            return this.val;
-        }
-
+    
          public double setLado(double _lado){
 
             return this.lado = _lado;
@@ -65,68 +60,53 @@ namespace classes
             return this.lado;
         }
 
-         public double setApotema(double _apotema){
+        
+          public override double CalcularArea(){
 
-            return this.apotema = _apotema;
-        }
-
-        public double getApotema(){
-
-            return this.apotema;
-        }
-          public override double CalcularArea1(double lado, double apotema){
-
-            return 4*lado*apotema;
+            return 2 * (1 + Math.Sqrt(2)) * Math.Pow(lado, 2);
           }
 
-        public override double CalcularPerimetro(double _val){
-            return 8*_val;
+        public override double CalcularPerimetro(){
+            return 8*lado;
         }
+
+        public override void Mostrar(){
+        Console.WriteLine(lado);
+        Console.WriteLine(CalcularArea());
+        Console.WriteLine(CalcularPerimetro());
+    }
     }
  
     public abstract class Pentagono : Forma{
-   public double val {get;set;}  
-   public double perimetro {get;set;}
-   public double apotema {get;set;}
+   public double lado {get;set;}  
 
-    public double setValor(double _val){
 
-            return this.val = _val;
+    public double setLado(double _lado){
+
+            return this.lado = _lado;
         }
 
-        public double getValor(){
+        public double getLado(){
 
-            return this.val;
+            return this.lado;
         }
 
-    public double setPerimetro(double _perimetro){
+    
 
-            return this.perimetro = _perimetro;
-        }
+        public override double CalcularArea(){
 
-        public double getPerimetro(){
-
-            return this.perimetro;
-        }
-
-         public double setApotema(double _apotema){
-
-            return this.apotema = _apotema;
-        }
-
-        public double getApotema(){
-
-            return this.apotema;
-        }
-
-        public override double CalcularArea1(double perimetro,double apotema){
-
-            return perimetro*apotema/2;
+            return 0.25 * Math.Sqrt(5 * (5 + 2 * Math.Sqrt(5))) * Math.Pow(lado, 2);
           }
 
-        public override double CalcularPerimetro(double _val){
-            return 5*_val;
+        public override double CalcularPerimetro(){
+            return 5*lado;
         }
+
+        public override void Mostrar(){
+        Console.WriteLine(lado);
+        Console.WriteLine(CalcularArea());
+        Console.WriteLine(CalcularPerimetro());
+    }
    
     }
 
@@ -151,14 +131,165 @@ namespace classes
                 return this.altura;
             }
 
-            public override double CalcularArea1(double base1,double altura){
+            public override double CalcularArea(){
 
             return base1*altura;
           }
 
-        public override double CalcularPerimetro1(double base1,double altura){
+        public override double CalcularPerimetro(){
             return base1 + base1 + altura + altura;
         }
+
+        public override void Mostrar(){
+        Console.WriteLine(base1);
+        Console.WriteLine(altura);
+        Console.WriteLine(CalcularArea());
+        Console.WriteLine(CalcularPerimetro());
+    }
     }}
 
+    public abstract class Triangulo : Forma{
 
+        
+   public double base1 {get;set;}
+   public double altura {get;set;}
+
+   public double Lado1 { get; set; }
+    public double Lado2 { get; set; }
+    public double Lado3 { get; set; }
+
+        public double setLado1(double _lado1){
+        return this.Lado1 = _lado1;
+    }
+
+        public double getLado1(){
+
+        return this.Lado1;
+
+    }
+
+        public double setLado2(double lado){
+
+        return this.Lado2 = lado;
+
+    }
+
+        public double getLado2(){
+
+        return this.Lado2;
+
+    }
+
+        public double setLado3(double lado){
+
+        return this.Lado3 = lado;
+
+    }
+
+        public double getLado3(){
+
+        return this.Lado3;
+
+    }
+
+        public double setBase(double _base){
+
+            return this.base1 = _base;
+        }
+
+        public double getBase(){
+
+            return this.base1;
+        }
+
+        public double setAltura(double _altura){
+
+            return this.altura = _altura;
+        }
+
+        public double getAltura(){
+
+            return this.altura;
+        }
+
+        public override double CalcularArea(){
+
+            return 0.5 * base1 * altura;
+          }
+
+        public override double CalcularPerimetro(){
+            return Lado1 + Lado2 + Lado3;
+        }
+
+        public override void Mostrar(){
+        Console.WriteLine(base1);
+        Console.WriteLine(altura);
+        Console.WriteLine(CalcularArea());
+        Console.WriteLine(CalcularPerimetro());
+    }
+
+    }
+
+    public abstract class Circulo : Forma{
+
+        public double raio {get;set;}
+
+        public double setRaio(double _raio){
+
+            return this.raio = _raio;
+        }
+
+        public double getRaio(){
+
+            return this.raio;
+        }
+
+        public override double CalcularArea(){
+
+            return  Math.PI * Math.Pow(raio, 2);
+          }
+
+        public override double CalcularPerimetro(){
+            return 2 * Math.PI * raio;
+        }
+
+        public override void Mostrar(){
+        Console.WriteLine(raio);
+        Console.WriteLine(CalcularArea());
+        Console.WriteLine(CalcularPerimetro());
+    }
+       
+
+    }
+
+    public abstract class Hexagono : Forma{
+
+public double lado {get;set;}  
+
+
+    public double setLado(double _lado){
+
+            return this.lado = _lado;
+        }
+
+        public double getLado(){
+
+            return this.lado;
+        }
+
+      public override double CalcularArea(){
+
+            return  3 * Math.Sqrt(3) / 2 * Math.Pow(lado, 2);
+          }
+
+          public override double CalcularPerimetro(){
+            return 6*lado;
+        }
+
+        public override void Mostrar(){
+        Console.WriteLine(lado);
+        Console.WriteLine(CalcularArea());
+        Console.WriteLine(CalcularPerimetro());
+    }
+
+    }
