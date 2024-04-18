@@ -28,18 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
+            formasImagem = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)formasImagem).BeginInit();
             SuspendLayout();
+            // 
+            // formasImagem
+            // 
+            formasImagem.Location = new Point(320, 183);
+            formasImagem.Name = "formasImagem";
+            formasImagem.Size = new Size(100, 50);
+            formasImagem.TabIndex = 0;
+            formasImagem.TabStop = false;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(formasImagem);
             Name = "Form1";
             Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)formasImagem).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
+
+        private PictureBox formasImagem;
+
     }
+
 }

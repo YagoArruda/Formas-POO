@@ -7,5 +7,9 @@ namespace Formas_POO
             InitializeComponent();
         }
 
+        public void setFormasImagem(string caminhoDaImagem)
+        {
+            formasImagem.Image = Image.FromFile(caminhoDaImagem);
+        }
     }
 }

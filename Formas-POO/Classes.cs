@@ -1,6 +1,7 @@
 using System.Configuration;
 using System.Reflection;
 using classes;
+using Formas_POO;
 
 //18/04/2024: Conferir as formulas usadas nas areas
 
@@ -48,6 +49,19 @@ namespace classes
             Console.WriteLine(lado);
             Console.WriteLine(CalcularArea());
             Console.WriteLine(CalcularPerimetro());
+
+            foreach (Form formAberto in Application.OpenForms)
+            {
+                // Verifica se o formulário é do tipo Form1 (ou o nome do seu formulário)
+                if (formAberto is Form1)
+                {
+                    // Cast para Form1 (ou o nome do seu formulário)
+                    Form1 form1 = (Form1)formAberto;
+
+                    form1.setFormasImagem("");
+                    break;
+                }
+            }
         }
 
     }
