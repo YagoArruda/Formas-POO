@@ -2,6 +2,7 @@ using System.Configuration;
 using System.Reflection;
 using classes;
 using Formas_POO;
+using System.IO;
 
 //18/04/2024: Conferir as formulas usadas nas areas
 
@@ -10,6 +11,7 @@ namespace classes
 
     public abstract class Forma
     {
+
         public virtual void Mostrar()
         {
 
@@ -20,9 +22,8 @@ namespace classes
 
     }
 
-    public abstract class Quadrado : Forma
+    public class Quadrado : Forma
     {
-
         public double lado;
 
         public void setValor(double _lado)
@@ -46,27 +47,12 @@ namespace classes
 
         public override void Mostrar()
         {
-            Console.WriteLine(lado);
-            Console.WriteLine(CalcularArea());
-            Console.WriteLine(CalcularPerimetro());
-
-            foreach (Form formAberto in Application.OpenForms)
-            {
-                // Verifica se o formulário é do tipo Form1 (ou o nome do seu formulário)
-                if (formAberto is Form1)
-                {
-                    // Cast para Form1 (ou o nome do seu formulário)
-                    Form1 form1 = (Form1)formAberto;
-
-                    form1.setFormasImagem("");
-                    break;
-                }
-            }
+            
         }
 
     }
 
-    public abstract class Octagono : Forma
+    public class Octagono : Forma
     {
 
         public double lado;
@@ -99,7 +85,7 @@ namespace classes
         }
     }
 
-    public abstract class Pentagono : Forma
+    public class Pentagono : Forma
     {
         public double lado;
 
@@ -133,7 +119,7 @@ namespace classes
 
     }
 
-    public abstract class Retangulo : Forma
+    public class Retangulo : Forma
     {
         public double base1;
         public double altura;
@@ -178,66 +164,22 @@ namespace classes
         }
     }
 
-    public abstract class Triangulo : Forma
+    public class Triangulo : Forma
     {
 
-        public double base1;
+        public double baset;
         public double altura;
-
-        public double Lado1;
-        public double Lado2;
-        public double Lado3;
-
-        public void setLado1(double _lado1)
-        {
-            this.Lado1 = _lado1;
-        }
-
-        public double getLado1()
-        {
-
-            return this.Lado1;
-
-        }
-
-        public void setLado2(double lado)
-        {
-
-            this.Lado2 = lado;
-
-        }
-
-        public double getLado2()
-        {
-
-            return this.Lado2;
-
-        }
-
-        public void setLado3(double lado)
-        {
-
-            this.Lado3 = lado;
-
-        }
-
-        public double getLado3()
-        {
-
-            return this.Lado3;
-
-        }
 
         public void setBase(double _base)
         {
 
-            this.base1 = _base;
+            this.baset = _base;
         }
 
         public double getBase()
         {
 
-            return this.base1;
+            return this.baset;
         }
 
         public void setAltura(double _altura)
@@ -255,17 +197,17 @@ namespace classes
         public override double CalcularArea()
         {
 
-            return 0.5 * base1 * altura;
+            return 0.5 * baset * altura;
         }
 
         public override double CalcularPerimetro()
         {
-            return Lado1 + Lado2 + Lado3;
+            return baset * 3;
         }
 
         public override void Mostrar()
         {
-            Console.WriteLine(base1);
+            Console.WriteLine(baset);
             Console.WriteLine(altura);
             Console.WriteLine(CalcularArea());
             Console.WriteLine(CalcularPerimetro());
@@ -273,7 +215,7 @@ namespace classes
 
     }
 
-    public abstract class Circulo : Forma
+    public class Circulo : Forma
     {
 
         public double raio;
@@ -308,7 +250,7 @@ namespace classes
 
     }
 
-    public abstract class Hexagono : Forma
+    public class Hexagono : Forma
     {
 
         public double lado;
