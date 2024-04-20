@@ -4,7 +4,6 @@ using classes;
 using Formas_POO;
 using System.IO;
 
-//18/04/2024: Conferir as formulas usadas nas areas
 
 namespace classes
 {
@@ -22,9 +21,9 @@ namespace classes
 
     }
 
-    public class Quadrado : Forma
+    public class Quadrado : Forma 
     {
-        public double lado;
+        private double lado;
 
         public void setValor(double _lado)
         {
@@ -47,7 +46,9 @@ namespace classes
 
         public override void Mostrar()
         {
-            
+            Console.WriteLine(lado);
+            Console.WriteLine(CalcularArea());
+            Console.WriteLine(CalcularPerimetro());
         }
 
     }
@@ -55,7 +56,7 @@ namespace classes
     public class Octagono : Forma
     {
 
-        public double lado;
+        private double lado;
 
         public void setLado(double _lado)
         {
@@ -87,7 +88,7 @@ namespace classes
 
     public class Pentagono : Forma
     {
-        public double lado;
+        private double lado;
 
         public void setLado(double _lado)
         {
@@ -121,8 +122,8 @@ namespace classes
 
     public class Retangulo : Forma
     {
-        public double base1;
-        public double altura;
+        private double base1;
+        private double altura;
 
         public void setBase(double _base1)
         {
@@ -167,8 +168,8 @@ namespace classes
     public class Triangulo : Forma
     {
 
-        public double baset;
-        public double altura;
+        private double baset;
+        private double altura;
 
         public void setBase(double _base)
         {
@@ -218,7 +219,7 @@ namespace classes
     public class Circulo : Forma
     {
 
-        public double raio;
+        private double raio;
 
         public void setRaio(double _raio)
         {
@@ -232,7 +233,7 @@ namespace classes
 
         public override double CalcularArea()
         {
-            return Math.PI * Math.Pow(raio, 2);
+            return Math.PI * raio * raio;
         }
 
         public override double CalcularPerimetro()
@@ -253,7 +254,7 @@ namespace classes
     public class Hexagono : Forma
     {
 
-        public double lado;
+        private double lado;
 
 
         public void setLado(double _lado)
