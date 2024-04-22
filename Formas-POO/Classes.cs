@@ -3,7 +3,7 @@ using System.Reflection;
 using classes;
 using Formas_POO;
 using System.IO;
-
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace classes
 {
@@ -23,7 +23,33 @@ namespace classes
 
     public class Quadrado : Forma 
     {
-        private double lado;
+        private double lado = 0;
+        PictureBox localImagem;
+        Label area;
+        Label perimetro;
+
+        public Quadrado(double _lado, PictureBox _localImagem, Label _area, Label _perimetro)
+        {
+            setValor(_lado);
+            setLocalImagem(_localImagem);
+            setLabelArea(_area);
+            setLabelPerimetro(_perimetro);
+        }
+
+        public void setLocalImagem(PictureBox _localImagem)
+        {
+            this.localImagem = _localImagem;
+        }
+
+        public void setLabelArea(Label _area)
+        {
+            this.area = _area;
+        }
+
+        public void setLabelPerimetro(Label _perimetro)
+        {
+            this.perimetro = _perimetro;
+        }
 
         public void setValor(double _lado)
         {
@@ -46,9 +72,9 @@ namespace classes
 
         public override void Mostrar()
         {
-            Console.WriteLine(lado);
-            Console.WriteLine(CalcularArea());
-            Console.WriteLine(CalcularPerimetro());
+            this.localImagem.Image = Image.FromFile("Imagens/quadrado.png");
+            this.area.Text = "Area: " + CalcularArea().ToString();
+            this.perimetro.Text = "Perimetro: " + CalcularPerimetro().ToString();
         }
 
     }
@@ -56,7 +82,34 @@ namespace classes
     public class Octagono : Forma
     {
 
-        private double lado;
+        private double lado = 0;
+        PictureBox localImagem;
+        Label area;
+        Label perimetro;
+
+        public Octagono(double _lado, PictureBox _localImagem, Label _area, Label _perimetro)
+        {
+            setLado(_lado);
+            setLocalImagem(_localImagem);
+            setLabelArea(_area);
+            setLabelPerimetro(_perimetro);
+        }
+
+        public void setLocalImagem(PictureBox _localImagem)
+        {
+            this.localImagem = _localImagem;
+        }
+
+        public void setLabelArea(Label _area)
+        {
+            this.area = _area;
+        }
+
+        public void setLabelPerimetro(Label _perimetro)
+        {
+            this.perimetro = _perimetro;
+        }
+
 
         public void setLado(double _lado)
         {
@@ -80,15 +133,42 @@ namespace classes
 
         public override void Mostrar()
         {
-            Console.WriteLine(lado);
-            Console.WriteLine(CalcularArea());
-            Console.WriteLine(CalcularPerimetro());
+            this.localImagem.Image = Image.FromFile("Imagens/octagono.png");
+            this.area.Text = "Area: " + CalcularArea().ToString();
+            this.perimetro.Text = "Perimetro: " + CalcularPerimetro().ToString();
         }
     }
 
     public class Pentagono : Forma
     {
-        private double lado;
+        private double lado = 0;
+        PictureBox localImagem;
+        Label area;
+        Label perimetro;
+
+        public Pentagono(double _lado, PictureBox _localImagem, Label _area, Label _perimetro)
+        {
+            setLado(_lado);
+            setLocalImagem(_localImagem);
+            setLabelArea(_area);
+            setLabelPerimetro(_perimetro);
+        }
+
+        public void setLocalImagem(PictureBox _localImagem)
+        {
+            this.localImagem = _localImagem;
+        }
+
+        public void setLabelArea(Label _area)
+        {
+            this.area = _area;
+        }
+
+        public void setLabelPerimetro(Label _perimetro)
+        {
+            this.perimetro = _perimetro;
+        }
+
 
         public void setLado(double _lado)
         {
@@ -113,17 +193,45 @@ namespace classes
 
         public override void Mostrar()
         {
-            Console.WriteLine(lado);
-            Console.WriteLine(CalcularArea());
-            Console.WriteLine(CalcularPerimetro());
+            this.localImagem.Image = Image.FromFile("Imagens/pentagono.png");
+            this.area.Text = "Area: " + CalcularArea().ToString();
+            this.perimetro.Text = "Perimetro: " + CalcularPerimetro().ToString();
         }
 
     }
 
     public class Retangulo : Forma
     {
-        private double base1;
-        private double altura;
+        private double base1 = 0;
+        private double altura = 0;
+        PictureBox localImagem;
+        Label area;
+        Label perimetro;
+
+        public Retangulo(double _base, double _altura, PictureBox _localImagem, Label _area, Label _perimetro)
+        {
+            setBase(_base);
+            setAltura(_altura);
+            setLocalImagem(_localImagem);
+            setLabelArea(_area);
+            setLabelPerimetro(_perimetro);
+        }
+
+        public void setLocalImagem(PictureBox _localImagem)
+        {
+            this.localImagem = _localImagem;
+        }
+
+        public void setLabelArea(Label _area)
+        {
+            this.area = _area;
+        }
+
+        public void setLabelPerimetro(Label _perimetro)
+        {
+            this.perimetro = _perimetro;
+        }
+
 
         public void setBase(double _base1)
         {
@@ -158,18 +266,44 @@ namespace classes
 
         public override void Mostrar()
         {
-            Console.WriteLine(base1);
-            Console.WriteLine(altura);
-            Console.WriteLine(CalcularArea());
-            Console.WriteLine(CalcularPerimetro());
+            this.localImagem.Image = Image.FromFile("Imagens/retangulo.png");
+            this.area.Text = "Area: " + CalcularArea().ToString();
+            this.perimetro.Text = "Perimetro: " + CalcularPerimetro().ToString();
         }
     }
 
     public class Triangulo : Forma
     {
 
-        private double baset;
-        private double altura;
+        private double baset = 0;
+        private double altura = 0;
+        PictureBox localImagem;
+        Label area;
+        Label perimetro;
+
+        public Triangulo(double _baset, double _altura, PictureBox _localImagem, Label _area, Label _perimetro)
+        {
+            setBase(_baset);
+            setAltura(_altura);
+            setLocalImagem(_localImagem);
+            setLabelArea(_area);
+            setLabelPerimetro(_perimetro);
+        }
+
+        public void setLocalImagem(PictureBox _localImagem)
+        {
+            this.localImagem = _localImagem;
+        }
+
+        public void setLabelArea(Label _area)
+        {
+            this.area = _area;
+        }
+
+        public void setLabelPerimetro(Label _perimetro)
+        {
+            this.perimetro = _perimetro;
+        }
 
         public void setBase(double _base)
         {
@@ -208,10 +342,9 @@ namespace classes
 
         public override void Mostrar()
         {
-            Console.WriteLine(baset);
-            Console.WriteLine(altura);
-            Console.WriteLine(CalcularArea());
-            Console.WriteLine(CalcularPerimetro());
+            this.localImagem.Image = Image.FromFile("Imagens/triangulo.jpg");
+            this.area.Text = "Area: " + CalcularArea().ToString();
+            this.perimetro.Text = "Perimetro: " + CalcularPerimetro().ToString();
         }
 
     }
@@ -219,7 +352,33 @@ namespace classes
     public class Circulo : Forma
     {
 
-        private double raio;
+        private double raio = 0;
+        PictureBox localImagem;
+        Label area;
+        Label perimetro;
+
+        public Circulo(double _raio, PictureBox _localImagem, Label _area, Label _perimetro)
+        {
+            setRaio(_raio);
+            setLocalImagem(_localImagem);
+            setLabelArea(_area);
+            setLabelPerimetro(_perimetro);
+        }
+
+        public void setLocalImagem(PictureBox _localImagem)
+        {
+            this.localImagem = _localImagem;
+        }
+
+        public void setLabelArea(Label _area)
+        {
+            this.area = _area;
+        }
+
+        public void setLabelPerimetro(Label _perimetro)
+        {
+            this.perimetro = _perimetro;
+        }
 
         public void setRaio(double _raio)
         {
@@ -243,18 +402,43 @@ namespace classes
 
         public override void Mostrar()
         {
-            Console.WriteLine(raio);
-            Console.WriteLine(CalcularArea());
-            Console.WriteLine(CalcularPerimetro());
+            this.localImagem.Image = Image.FromFile("Imagens/circulo.png");
+            this.area.Text = "Area: " + CalcularArea().ToString();
+            this.perimetro.Text = "Perimetro: " + CalcularPerimetro().ToString();
         }
-
 
     }
 
     public class Hexagono : Forma
     {
 
-        private double lado;
+        private double lado = 0;
+        PictureBox localImagem;
+        Label area;
+        Label perimetro;
+
+        public Hexagono(double _lado, PictureBox _localImagem, Label _area, Label _perimetro)
+        {
+            setLado(_lado);
+            setLocalImagem(_localImagem);
+            setLabelArea(_area);
+            setLabelPerimetro(_perimetro);
+        }
+
+        public void setLocalImagem(PictureBox _localImagem)
+        {
+            this.localImagem = _localImagem;
+        }
+
+        public void setLabelArea(Label _area)
+        {
+            this.area = _area;
+        }
+
+        public void setLabelPerimetro(Label _perimetro)
+        {
+            this.perimetro = _perimetro;
+        }
 
 
         public void setLado(double _lado)
@@ -279,9 +463,9 @@ namespace classes
 
         public override void Mostrar()
         {
-            Console.WriteLine(lado);
-            Console.WriteLine(CalcularArea());
-            Console.WriteLine(CalcularPerimetro());
+            this.localImagem.Image = Image.FromFile("Imagens/hexagono.png");
+            this.area.Text = "Area: " + CalcularArea().ToString();
+            this.perimetro.Text = "Perimetro: " + CalcularPerimetro().ToString();
         }
 
     }

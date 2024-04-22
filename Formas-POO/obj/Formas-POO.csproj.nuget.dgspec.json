@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\danie\\Desktop\\poogithub\\Formas-POO\\Formas-POO\\Formas-POO.csproj": {}
+    "C:\\Users\\Yago\\Desktop\\Projetos Github\\Formas-POO\\Formas-POO\\Formas-POO.csproj": {}
   },
   "projects": {
-    "C:\\Users\\danie\\Desktop\\poogithub\\Formas-POO\\Formas-POO\\Formas-POO.csproj": {
+    "C:\\Users\\Yago\\Desktop\\Projetos Github\\Formas-POO\\Formas-POO\\Formas-POO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\danie\\Desktop\\poogithub\\Formas-POO\\Formas-POO\\Formas-POO.csproj",
+        "projectUniqueName": "C:\\Users\\Yago\\Desktop\\Projetos Github\\Formas-POO\\Formas-POO\\Formas-POO.csproj",
         "projectName": "Formas-POO",
-        "projectPath": "C:\\Users\\danie\\Desktop\\poogithub\\Formas-POO\\Formas-POO\\Formas-POO.csproj",
-        "packagesPath": "C:\\Users\\danie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\danie\\Desktop\\poogithub\\Formas-POO\\Formas-POO\\obj\\",
+        "projectPath": "C:\\Users\\Yago\\Desktop\\Projetos Github\\Formas-POO\\Formas-POO\\Formas-POO.csproj",
+        "packagesPath": "C:\\Users\\Yago\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Yago\\Desktop\\Projetos Github\\Formas-POO\\Formas-POO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\danie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Yago\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -63,7 +63,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

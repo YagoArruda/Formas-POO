@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Formas-POO")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0b3a914cad8923df918181757a3fb37cf41f4d84")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ee98b96874bde2a5aca86c9649d02f50820b5f4a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Formas-POO")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Formas-POO")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
