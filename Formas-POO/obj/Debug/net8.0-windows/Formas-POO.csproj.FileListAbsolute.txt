@@ -16,3 +16,21 @@ C:\Users\Yago\Desktop\Projetos Github\Formas-POO\Formas-POO\obj\Debug\net8.0-win
 C:\Users\Yago\Desktop\Projetos Github\Formas-POO\Formas-POO\obj\Debug\net8.0-windows\Formas-POO.genruntimeconfig.cache
 C:\Users\Yago\Desktop\Projetos Github\Formas-POO\Formas-POO\obj\Debug\net8.0-windows\ref\Formas-POO.dll
 C:\Users\Yago\Desktop\Projetos Github\Formas-POO\Formas-POO\obj\Debug\net8.0-windows\Formas_POO.Properties.Resources.resources
+C:\Users\danie\Desktop\poogithub\Formas-POO\Formas-POO\bin\Debug\net8.0-windows\Formas-POO.exe
+C:\Users\danie\Desktop\poogithub\Formas-POO\Formas-POO\bin\Debug\net8.0-windows\Formas-POO.deps.json
+C:\Users\danie\Desktop\poogithub\Formas-POO\Formas-POO\bin\Debug\net8.0-windows\Formas-POO.runtimeconfig.json
+C:\Users\danie\Desktop\poogithub\Formas-POO\Formas-POO\bin\Debug\net8.0-windows\Formas-POO.dll
+C:\Users\danie\Desktop\poogithub\Formas-POO\Formas-POO\bin\Debug\net8.0-windows\Formas-POO.pdb
+C:\Users\danie\Desktop\poogithub\Formas-POO\Formas-POO\obj\Debug\net8.0-windows\Formas_POO.Form1.resources
+C:\Users\danie\Desktop\poogithub\Formas-POO\Formas-POO\obj\Debug\net8.0-windows\Formas_POO.Properties.Resources.resources
+C:\Users\danie\Desktop\poogithub\Formas-POO\Formas-POO\obj\Debug\net8.0-windows\Formas-POO.csproj.GenerateResource.cache
+C:\Users\danie\Desktop\poogithub\Formas-POO\Formas-POO\obj\Debug\net8.0-windows\Formas-POO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\danie\Desktop\poogithub\Formas-POO\Formas-POO\obj\Debug\net8.0-windows\Formas-POO.AssemblyInfoInputs.cache
+C:\Users\danie\Desktop\poogithub\Formas-POO\Formas-POO\obj\Debug\net8.0-windows\Formas-POO.AssemblyInfo.cs
+C:\Users\danie\Desktop\poogithub\Formas-POO\Formas-POO\obj\Debug\net8.0-windows\Formas-POO.csproj.CoreCompileInputs.cache
+C:\Users\danie\Desktop\poogithub\Formas-POO\Formas-POO\obj\Debug\net8.0-windows\Formas-POO.sourcelink.json
+C:\Users\danie\Desktop\poogithub\Formas-POO\Formas-POO\obj\Debug\net8.0-windows\Formas-POO.dll
+C:\Users\danie\Desktop\poogithub\Formas-POO\Formas-POO\obj\Debug\net8.0-windows\refint\Formas-POO.dll
+C:\Users\danie\Desktop\poogithub\Formas-POO\Formas-POO\obj\Debug\net8.0-windows\Formas-POO.pdb
+C:\Users\danie\Desktop\poogithub\Formas-POO\Formas-POO\obj\Debug\net8.0-windows\Formas-POO.genruntimeconfig.cache
+C:\Users\danie\Desktop\poogithub\Formas-POO\Formas-POO\obj\Debug\net8.0-windows\ref\Formas-POO.dll

@@ -11,10 +11,27 @@ namespace Formas_POO
             InitializeComponent();
         }
 
+        private bool validarvalor()
+        {
+             if (ladoQuadrado.Text == "")
+                {
+                    MessageBox.Show("Coloque um valor válido!");
+                ladoQuadrado.Focus();
+                  return false;
+                }
+
+             return true;
+
+        }
         private void button1_Click(object sender, EventArgs e)
         {
-            Quadrado quad = new Quadrado(double.Parse(ladoQuadrado.Text), imagemForma, Area, Perimetro);
-            quad.Mostrar();
+            if (validarvalor()) { 
+                Quadrado quad = new Quadrado(double.Parse(ladoQuadrado.Text), imagemForma, Area, Perimetro);
+
+            
+                quad.Mostrar();
+            }
+      
         }
 
         private void button3_Click(object sender, EventArgs e)
