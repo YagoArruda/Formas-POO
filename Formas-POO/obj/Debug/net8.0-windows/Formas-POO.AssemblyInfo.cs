@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Formas-POO")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a6739d4736b809a8d273ef343f850f10e718ccf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d30586bcb3b20b13a12c0c6296749115d7f28955")]
 [assembly: System.Reflection.AssemblyProductAttribute("Formas-POO")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Formas-POO")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
